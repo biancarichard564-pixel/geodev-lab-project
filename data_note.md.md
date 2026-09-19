@@ -86,7 +86,11 @@ Extracted [date] via QuickOSM, amenity=*
 
 ## CRS and preparation
 -All source layers arrived in EPSG:4326
+
 -Study area:Imo state East, extracted from GRID3 state boundary
+
 -All Layer clipped to study area, then reprojected to EPSH:32632(UTM 32N)
+
 -Area check: Imo State East 5,101 km²,matches published figure 
+
 -Working files in data/process,raw files untouched 
