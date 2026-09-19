@@ -1,5 +1,5 @@
 # Data notes
-## GRID3 NGA - Operational LGA Boundaries
+GRID3 NGA - Operational LGA Boundaries
 - Source: https://data.grid3.org/
 - Downloaded: \[16/9/2026]
 ## How many rows
