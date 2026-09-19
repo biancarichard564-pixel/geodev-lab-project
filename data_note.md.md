@@ -95,6 +95,8 @@ a.  EPSG:32632 is a Universal Transverse Mercator projection.
 
 b.When you calculate area in QGIS, using EPSG:4326 (degrees) will give distorted results. Reprojecting to EPSG:32632 ensures your area is measured in square meters, which you can then convert to km². 
 
+c. Imo State and Delta State sit comfortably in Zone 32N, so EPSG:32632 minimizes distortion for your study area.
+
 -Area check: Imo State East 5,101 km²,matches published figure 
 
 -Working files in data/process,raw files untouched 
