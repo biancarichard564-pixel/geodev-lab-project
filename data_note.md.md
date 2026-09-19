@@ -89,7 +89,11 @@ Extracted [date] via QuickOSM, amenity=*
 
 -Study area:Imo state East, extracted from GRID3 state boundary
 
--All Layer clipped to study area, then reprojected to EPSH:32632(UTM 32N)
+-All Layer clipped to study area, then reprojected to EPSG:32632(UTM 32N) Note : i choose it because 
+
+a.  EPSG:32632 is a Universal Transverse Mercator projection. 
+
+b.When you calculate area in QGIS, using EPSG:4326 (degrees) will give distorted results. Reprojecting to EPSG:32632 ensures your area is measured in square meters, which you can then convert to km². 
 
 -Area check: Imo State East 5,101 km²,matches published figure 
 
