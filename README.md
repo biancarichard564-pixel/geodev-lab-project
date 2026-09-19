@@ -31,9 +31,9 @@ Environmental Protection: Wetlands are crucial for biodiversity and carbon stora
 A GIS workflow to classify land cover in Burutu LGA using NDWI, NDVI, and supervised classification. Over 12 months, the workflow will expand into Python automation and Google Earth Engine for time‑series analysis, with results applied to a vulnerability framework (exposure, sensitivity, adaptive capacity).
 
 ##Repo structure
-data/
-raw/ downloaded, never edited 
-processed/ derived outputs
-data_notes.ed full dataset documentation
-project brief.md week 1 brief
-readme 
+-data/
+-raw/ downloaded, never edited 
+-processed/ derived outputs
+-data_notes.ed full dataset documentation
+-project brief.md week 1 brief
+-readme 
