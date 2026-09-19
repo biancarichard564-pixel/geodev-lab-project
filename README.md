@@ -27,10 +27,10 @@ Environmental Protection: Wetlands are crucial for biodiversity and carbon stora
 -Nigeria Ward Boundaries : GRID3
 -Water Bodies            : Open Street Map 
 
-##What i'm building toward
+## What i'm building toward
 A GIS workflow to classify land cover in Burutu LGA using NDWI, NDVI, and supervised classification. Over 12 months, the workflow will expand into Python automation and Google Earth Engine for time‑series analysis, with results applied to a vulnerability framework (exposure, sensitivity, adaptive capacity).
 
-##Repo structure
+## Repo structure
 -data/
 
 -raw/ downloaded, never edited 
