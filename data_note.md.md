@@ -37,9 +37,13 @@ Extracted [2025] via Grid3, Boundary=*
 
 1 features
 **COMPLETENESS:** Coverage is strong in the built‑up areas like Owerri and other major towns.
+
 **CURRENCY**: most edits 2025. 
+
 **POSITIONAL:** align well with satellite imagery.
+
 **ATTRIBUTE:** no surface tag and no Null.
+
 **FITNESS:** Adequate for statewide accessibility analysis .
 
 
@@ -62,20 +66,20 @@ Extracted [date] via QuickOSM, highway=*
 
 
 
-##Hospital, Imo State East 
+## Hospital, Imo State East 
 Extracted [date] via QuickOSM, amenity=*
 
 21 features
 
-COMPLETENESS: Major hospitals in urban centers (e.g., Federal Medical Centre Owerri, Imo State University Teaching Hospital) are mapped. Smaller rural health centers are missing
+**COMPLETENESS:** Major hospitals in urban centers (e.g., Federal Medical Centre Owerri, Imo State University Teaching Hospital) are mapped. Smaller rural health centers are missing
 
-CURRENCY: Updates vary; new private hospitals or clinics may not yet appear in OSM.
+**CURRENCY:** Updates vary; new private hospitals or clinics may not yet appear in OSM.
 
-POSITIONAL: Large hospitals align well with satellite imagery; rural clinics sometimes mis‑located and i saw non.
+**POSITIONAL:** Large hospitals align well with satellite imagery; rural clinics sometimes mis‑located and i saw non.
 
-ATTRIBUTE: Many hospital features lack detailed tags 
+**ATTRIBUTE:** Many hospital features lack detailed tags 
 
-FITNESS: Adequate for identifying major healthcare facilities. Not adequate for detailed health service capacity analysis.
+**FITNESS:** Adequate for identifying major healthcare facilities. Not adequate for detailed health service capacity analysis.
 
 
 
