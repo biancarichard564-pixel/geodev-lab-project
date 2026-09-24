@@ -122,4 +122,4 @@ c. Imo State and Delta State sit comfortably in Zone 32N, so EPSG:32632 minimize
 
 -Working files in data/process, raw files untouched 
 ```
-Status: Week 3 Complete. First Spatial analysis in week 4
+Status: Week 3 Complete. First Spatial relation and analysis in week 4
