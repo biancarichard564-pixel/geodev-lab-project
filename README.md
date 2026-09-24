@@ -1,44 +1,53 @@
-# My GeoDev lab Africa project
-What is the proportion of dry land relative to open water bodies and wetlands across Burutu Local Government Area ,Delta state ?
-Built over twelve months with GeoDev Lab African, Cohort one. 
-See Projret-Brief.md for full brief   
+< My GeoDev lab Africa project>
+<Burutu LGA Wetland & Land Cover Analysis>
 
--**Exposure** :Burutu LGA is located in the Niger Delta, with extensive wetlands, mangroves, and open water bodies.
-Large portions of land are low‑lying and flood‑prone, so communities are highly exposed to seasonal flooding, erosion, and sea‑level rise.
-Dry land proportion is relatively small compared to wetlands and water bodies, meaning settlements and infrastructure are concentrated in vulnerable zones.
+<Built over twelve months with GeoDev Lab African, Cohort one.>
 
-**Sensitivity** :communities rely heavily on fishing, farming, and river transport, so any disruption to wetlands or waterways directly impacts livelihoods.
-Settlements are often built on fragile soils or reclaimed land, making them sensitive to flooding and erosion.
-Health systems and infrastructure are limited, so even small environmental changes can have large social impacts.
+**GeoDev Lab Africa, Cohort One. **
 
-**Adaptive Capacity** 
-*Strengths*: Strong local knowledge of riverine living, traditional coping strategies (elevated housing, boats, seasonal migration).
-*Weaknesses*: Limited formal infrastructure (roads, hospitals), weak institutional support, and poverty reduce adaptive capacity.
-*Opportunities*: Community‑based adaptation, improved drainage, flood‑resistant housing, and government/NGO interventions can enhance resilience.
+< Richard Bianca Ihuoma>
 
-## Why it matters 
-Urban Planning & Estate Development: Limited dry land means projects require careful surveying, reclamation, and drainage design to avoid flooding.
-Agriculture & Livelihoods: Fishing and aquaculture thrive in wetlands, while farming is constrained to small dry patches.
-Environmental Protection: Wetlands are crucial for biodiversity and carbon storage; reclaiming them for estates can worsen flood risk and erode ecosystems
+The question
+< What is the proportion of dry land relative to open water bodies and wetlands across Burutu Local Government Area, Delta state? >
 
-## Dataset Used
--Nigeria state Bounaries : GRID3
--Nigeria Lga Boundaries  : GRID3
--Nigeria Ward Boundaries : GRID3
--Water Bodies            : Open Street Map 
+What's in here
 
-## What i'm building toward
-A GIS workflow to classify land cover in Burutu LGA using NDWI, NDVI, and supervised classification. Over 12 months, the workflow will expand into Python automation and Google Earth Engine for time‑series analysis, with results applied to a vulnerability framework (exposure, sensitivity, adaptive capacity).
+<project-name>
+├── docs/
+│   ├── 01-project-brief.md       # Week 1 project overview & objectives
+│   ├── 02-data-notes.md          # Week 2 dataset sources & documentation
+│   └── 03-data-preparation.md    # Week 3 data cleaning & preprocessing steps
+├── data/
+│   ├── raw/                      # Raw datasets (GRID3 boundaries, OSM water bodies)
+│   └── processed/                # Derived spatial layers & raster outputs
+├── scripts/                      # GIS & python processing scripts
+└── README.md                     # Project summary & vulnerability framework
 
-## Repo structure
--data/
 
--raw/ downloaded, never edited 
+How to run it
+git clone https://github.com/biancarichard564-pixel/geodev-lab-project.git
+   cd geodev-lab-project
+1. ** Software Required**
+   - Download and install [QGIS](https://qgis.org/) (version 3.x or higher).
 
--processed/ derived outputs
+2. ** Data Setup **
+   - Download the raw spatial datasets:
+     - **GRID3 Boundaries** (State, LGA, Ward)
+     - **Water Bodies** (OpenStreetMap)
+   - Place these downloaded files inside your local `data/raw/` folder.
 
--data_notes.ed full dataset documentation
+3. ** Open Project in QGIS **
+   - Launch QGIS.
+   - Open the `.qgz` project file from this repository.
+   - Ensure the layers from `data/raw/` are loaded properly to view the Burutu LGA land cover analysis.
 
--project brief.md week 1 brief
+the data is not this repository. Every source is linked in [the project brief](docs/01-Project.brief.md), so anyone can fetch it.
 
--readme 
+
+Progress
+-[x] Week 1, project brief with a source link for every dataset
+-[x] Week 2, data downloaded, opened and described
+-[x] Week 3, reprojected, clipped and quality checked
+-[x] Week 4, first spatial analysis, checked four ways
+
+GeoDev Lab Africa Learn. Build. Collaborate. Transform.
