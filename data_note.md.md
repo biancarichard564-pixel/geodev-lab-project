@@ -1,35 +1,57 @@
 # Data notes
+
+** Week 2 deliverable. ** Geodev Lab Africa, Cohort One.
+Author: <Richard Bianca Ihuoma>
+
+What i downloaded, where it came from, what is in it and what is wrong with it.
+```
+
+## Summary
+
+| # | Dataset | Type | Retrieved | Status |
+|---|---|---|---|---|
+| 1 | GRID3 LGA Boundaries | Vector (Polygon) | 16/09/2026 | Complete |
+| 2 | OSM Roads | Vector (LineString) | 16/09/2026 | Incomplete |
+| 3 | OSM Waterways | Vector (LineString) | 16/09/2026 | Partial |
+ 
+```
 ## GRID3 NGA - Operational LGA Boundaries
-- Source: https://data.grid3.org/
-- Downloaded: \[16/9/2026]
-- 774 features -Polygon (MultiPolygon)
-- Columns:lga\_name (Ihitte/Uboma), state (Imo),Lgacode (17007),Statecode(IM) 
-- No nulls in ward name
-Quality note:- Used boundary so it Covers my LGA fully.
+- **Source:** [https://data.grid3.org/](https://data.grid3.org/)
+- **Downloaded:** 16/09/2026
+- **Geometry type:** Polygon (MultiPolygon) — 774 features
+- **Columns:** `lga_name` (Ihitte/Uboma), `state` (Imo), `Lgacode` (17007), `Statecode` (IM)
+- **Nulls:** No nulls in boundary fields
+- **Quality note:** Used boundary covers my target LGA fully.
+
+## OSM Roads (extracted via QuickOSM)
+- **Query:** `highway=*` in Ihitte/Uboma
+- **Extracted:** 16/09/2026
+- **Geometry type:** Line (LineString) — 26 features
+- **Nulls:** Yes — 25 features have no surface tag, 1 has an unpaved surface tag.
+- **Quality note:** Shows dense coverage in the urban core, while the outskirts have limited representation with only major roads mapped.
+
+ 
+## OSM Waterways (extracted via QuickOSM)
+- **Query:** `waterway=*` within Ihitte/Uboma
+- **Extracted:** 16/09/2026
+- **Geometry type:** Line (LineString) — 13 features
+- **Nulls:** Yes
+- **Quality note:** The extracted OSM river data shows clear representation of major rivers, while rural streams and smaller tributaries are not mapped, indicating sparse coverage in the outskirts.. 
+
+## Problem 
+The extracted OSM river data shows clear representation of major rivers, while rural streams and smaller tributaries are not mapped, indicating sparse coverage in the outskirts..
+
+
+Status: week 2 complete. reprojection and quality check in week 3. 
 
 
 
-## OSM Road,extracted via QuickOSM
-- Query: highway=\* in Ihitte/Uboma
-- Extracted: \[16/09/2026]
-- 26 features, Line (LineString)
-Nulls:- yes and 25 have no surface tag,1 has unpaved surface tag
-Note:-The extracted OSM road data shows dense coverage in the urban core, while the outskirts have limited representation, with only major roads mapped.
+**Week 3 deliverable. ** Geodev Lab Africa, Cohort One.
+Author: < Richard Bianca Ihuoma >
 
+This document outlines the data cleaning, clipping, reprojection, and preprocessing steps performed on raw datasets to prepare them for spatial analysis.
 
-## OSM water way,extracted via QuickOSM
-- Query: river=\* within Ihitte/Uboma
-- Extracted: \[16/09/2026]
-- 13 features, lines (LineString)
-Null: - yes
-Note: -The extracted OSM river data shows clear representation of major rivers, while rural streams and smaller tributaries are not mapped, indicating sparse coverage in the outskirts..
-
-
-That last line about coverage is the kind of note that saves you in month six
-commit it with the message Add data notes.
-keep adding to the file all year
-
-
+```
 
 ## Grid3, state boundary 
 GRID3-https://data.grid3.org/datasets/c41532b720504f4799fe20438b7e3b7f_0/explore?location=9.077959%2C8.685290%2C5#:~:text=GRID3%20NGA%20%2D%20Operational%20State%20Boundaries -
