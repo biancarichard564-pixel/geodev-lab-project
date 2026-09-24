@@ -3,7 +3,7 @@
 
 <Built over twelve months with GeoDev Lab African, Cohort one.>
 
-**GeoDev Lab Africa, Cohort One. **
+** GeoDev Lab Africa, Cohort One. **
 
 < Richard Bianca Ihuoma>
 
