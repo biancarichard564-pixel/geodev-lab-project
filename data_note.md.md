@@ -120,5 +120,6 @@ c. Imo State and Delta State sit comfortably in Zone 32N, so EPSG:32632 minimize
 
 -Area check: Imo State East 5,101 km²,matches published figure 
 
--Working files in data/process,raw files untouched 
+-Working files in data/process, raw files untouched 
 ```
+Status: Week 3 Complete. First Spatial analysis in week 4
