@@ -1,16 +1,20 @@
-< My GeoDev lab Africa project>
+# < My GeoDev lab Africa project>
+
 <Burutu LGA Wetland & Land Cover Analysis>
 
 <Built over twelve months with GeoDev Lab African, Cohort one.>
 
-** GeoDev Lab Africa, Cohort One. **
+**GeoDev Lab Africa, Cohort One. ** 
 
-< Richard Bianca Ihuoma>
+< Richard Bianca Ihuoma> 
+  
+## The question
 
-The question
 < What is the proportion of dry land relative to open water bodies and wetlands across Burutu Local Government Area, Delta state? >
 
-What's in here
+## What's in here
+
+```
 
 <project-name>
 ├── docs/
@@ -23,8 +27,11 @@ What's in here
 ├── scripts/                      # GIS & python processing scripts
 └── README.md                     # Project summary & vulnerability framework
 
+```
 
-How to run it
+## How to run it
+
+```bash 
 git clone https://github.com/biancarichard564-pixel/geodev-lab-project.git
    cd geodev-lab-project
 1. ** Software Required**
@@ -43,11 +50,22 @@ git clone https://github.com/biancarichard564-pixel/geodev-lab-project.git
 
 the data is not this repository. Every source is linked in [the project brief](docs/01-Project.brief.md), so anyone can fetch it.
 
+```
 
-Progress
--[x] Week 1, project brief with a source link for every dataset
--[x] Week 2, data downloaded, opened and described
--[x] Week 3, reprojected, clipped and quality checked
--[x] Week 4, first spatial analysis, checked four ways
+## Progress
 
-GeoDev Lab Africa Learn. Build. Collaborate. Transform.
+-[x] Week 1, project brief with a source link for every dataset   
+-[x] Week 2, data downloaded, opened and described   
+-[x] Week 3, reprojected, clipped and quality checked   
+-[x] Week 4, first spatial analysis, checked four ways   
+
+
+GeoDev Lab Africa Learn. Build. Collaborate. Transform.   
+
+
+
+
+
+
+
+
