@@ -4,7 +4,7 @@
 Author: <Richard Bianca Ihuoma>
 
 What i downloaded, where it came from, what is in it and what is wrong with it.
-```
+
 
 ## Summary
 
@@ -14,7 +14,7 @@ What i downloaded, where it came from, what is in it and what is wrong with it.
 | 2 | OSM Roads | Vector (LineString) | 16/09/2026 | Incomplete |
 | 3 | OSM Waterways | Vector (LineString) | 16/09/2026 | Partial |
  
-```
+
 ## GRID3 NGA - Operational LGA Boundaries
 - **Source:** [https://data.grid3.org/](https://data.grid3.org/)
 - **Downloaded:** 16/09/2026
@@ -46,12 +46,14 @@ Status: week 2 complete. reprojection and quality check in week 3.
 
 
 
+
+
+# Data notes
 **Week 3 deliverable. ** Geodev Lab Africa, Cohort One.
 Author: < Richard Bianca Ihuoma >
 
 This document outlines the data cleaning, clipping, reprojection, and preprocessing steps performed on raw datasets to prepare them for spatial analysis.
 
-```
 
 ## Grid3, state boundary 
 GRID3-https://data.grid3.org/datasets/c41532b720504f4799fe20438b7e3b7f_0/explore?location=9.077959%2C8.685290%2C5#:~:text=GRID3%20NGA%20%2D%20Operational%20State%20Boundaries -
@@ -69,7 +71,6 @@ Extracted [2025] via Grid3, Boundary=*
 **FITNESS:** Adequate for statewide accessibility analysis .
 
 
-
 ## OSM roads, Imo State East 
 Extracted [date] via QuickOSM, highway=*
 
@@ -84,8 +85,6 @@ Extracted [date] via QuickOSM, highway=*
 **ATTRIBUTE:** non has a surface tag but has Null. 
 
 **FITNESS:** adequate for access analysis in the built-up area. Not adequate for a paved-road question.
-
-
 
 
 ## Hospital, Imo State East 
@@ -105,7 +104,7 @@ Extracted [date] via QuickOSM, amenity=*
 
 
 
-
+```
 ## CRS and preparation
 -All source layers arrived in EPSG:4326
 
@@ -122,3 +121,4 @@ c. Imo State and Delta State sit comfortably in Zone 32N, so EPSG:32632 minimize
 -Area check: Imo State East 5,101 km²,matches published figure 
 
 -Working files in data/process,raw files untouched 
+```
