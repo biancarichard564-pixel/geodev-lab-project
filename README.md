@@ -20,7 +20,8 @@
 ├── docs/
 │   ├── 01-project-brief.md       # Week 1 project overview & objectives
 │   ├── 02-data-notes.md          # Week 2 dataset sources & documentation
-│   └── 03-data-preparation.md    # Week 3 data cleaning & preprocessing steps
+│   └── 03-data-note.md           # Week 3 data cleaning & preprocessing steps
+│   └── 04-month-1-summary.md     # Week 4 spatial relation and analysis
 ├── data/
 │   ├── raw/                      # Raw datasets (GRID3 boundaries, OSM water bodies)
 │   └── processed/                # Derived spatial layers & raster outputs
@@ -57,7 +58,7 @@ the data is not this repository. Every source is linked in [the project brief](d
 -[x] Week 1, project brief with a source link for every dataset   
 -[x] Week 2, data downloaded, opened and described   
 -[x] Week 3, reprojected, clipped and quality checked   
--[x] Week 4, first spatial analysis, checked four ways   
+-[x] Week 4, spatial relation and analysis
 
 
 GeoDev Lab Africa Learn. Build. Collaborate. Transform.   
