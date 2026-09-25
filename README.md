@@ -1,6 +1,6 @@
 # < My GeoDev lab Africa project>
 
-<Burutu LGA Wetland & Land Cover Analysis>
+<Flood Risk, Inundation, and Settlement Vulnerability>
 
 <Built over twelve months with GeoDev Lab African, Cohort one.>
 
@@ -10,7 +10,7 @@
   
 ## The question
 
-< What is the proportion of dry land relative to open water bodies and wetlands across Burutu Local Government Area, Delta state? >
+< What is the spatio-temporal extent of River Niger flood inundation in Patani LGA, and how does terrain elevation influence the vulnerability of surrounding settlements, infrastructure, farmlands, and swamp forest ecosystems? >
 
 ## What's in here
 
