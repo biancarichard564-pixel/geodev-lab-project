@@ -10,7 +10,7 @@
   
 ## The question
 
-< What is the spatio-temporal extent of River Niger flood inundation in Patani LGA, and how does terrain elevation influence the vulnerability of surrounding settlements, infrastructure, farmlands, and swamp forest ecosystems? >
+< What is the spatio-temporal extent of River Niger flood inundation in Patani LGA Delta State, and how does terrain elevation influence the vulnerability of surrounding settlements, infrastructure, farmlands, and swamp forest ecosystems? >
 
 ## What's in here
 
