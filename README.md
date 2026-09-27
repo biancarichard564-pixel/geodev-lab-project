@@ -23,7 +23,7 @@
 │   └── 03-data-note.md           # Week 3 data cleaning & preprocessing steps
 │   └── 04-month-1-summary.md     # Week 4 spatial relation and analysis
 ├── data/
-│   ├── raw/                      # Raw datasets (GRID3 boundaries, OSM water bodies)
+│   ├── raw/                      # Raw datasets (GRID3 boundaries,Settlement,FABDEM (Forest and Buildings removed DEM),sentinel - 1 GRD Flood Imagery,Land Cover / Farmland & Forest for Patani LGA,Water Bodies ,Roads,Buildings)
 │   └── processed/                # Derived spatial layers & raster outputs
 ├── scripts/                      # GIS & python processing scripts
 └── README.md                     # Project summary & vulnerability framework
