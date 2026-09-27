@@ -1,7 +1,7 @@
 # My Project brief
 
 ## The question 
-What is the spatio-temporal extent of River Niger flood inundation in Patani LGA Delta State, and how does terrain elevation influence the vulnerability of surrounding settlements, infrastructure, farmlands, and swamp forest ecosystems?
+What is the spatio-temporal extent of River Niger flood inundation in Patani LGA, Delta State, and how does bare-earth terrain elevation influence the spatial vulnerability of surrounding settlements, infrastructure, farmlands, and freshwater swamp forest ecosystems?
 
 ## Why it matters 
 
@@ -24,13 +24,42 @@ What is the spatio-temporal extent of River Niger flood inundation in Patani LGA
 ## The data I need
 - Nigeria state Bounaries 
 - Nigeria Lga Boundaries
-- Nigeria Ward Boundaries 
+- Nigeria Ward Boundaries
+- Settlement
+- FABDEM (Forest and Buildings removed DEM)
+- sentinel - 1 GRD Flood Imagery
+- Land Cover / Farmland & Forest for Patani LGA
 - Water Bodies 
 - Roads
 - Buildings
-- settlement 
-- Elevation and topographic data data covering patani lga 
-- Remote Sensing & Imagery Data
+
+- Spatio-temporal extent of River Niger flood inundation"
+
+Dataset: Sentinel-1 SAR Radar Imagery (Raster)
+
+Role: Tracks water boundaries across wet and dry seasons over time to map where and when floodwaters spread.
+
+
+- Bare-Earth terrain elevation (derived via FABDEM)"
+
+Dataset: FABDEM V1-2 Tile N05E006 (Raster)
+
+Role: Strips away tree canopy heights and building tops to give true ground elevation, ensuring accurate water flow and inundation modeling.
+
+
+- Surrounding settlements [and] infrastructure"
+
+Datasets: Buildings, Roads, & Waterways via OpenStreetMap / QuickOSM (Vector Layers)
+
+Role: Identifies which homes, communities, and transport corridors (like the East-West Road) overlap with low-elevation flood zones
+
+
+- Farmlands, and freshwater swamp forest ecosystems"
+
+Dataset: Esri 10m Land Cover 
+
+Role: Measures the total land surface area (in $\text{km}^2$ or hectares) of crops and native swamp forests submerged during peak flooding
+
 
 
 ## Where each dataset comes from
@@ -40,10 +69,12 @@ What is the spatio-temporal extent of River Niger flood inundation in Patani LGA
 | 2 | Nigeria LGA Boundaries | [GRID3 NGA Operational LGA Boundaries](https://data.grid3.org/datasets/2bb616a49ee84f409427cc2143787113_0/explore?location=9.077959%2C8.685290%2C5#:~:text=GRID3%20NGA%20%2D%20Operational%20LGA%20Boundaries) | Shapefile | 2.6 MB |
 | 3 | Nigeria Ward Boundaries | [GRID3 NGA Operational Wards v3.0](https://data.grid3.org/datasets/45cd2ef592094d12aca43113a90a6054_0/explore?location=9.077872%2C8.670771%2C5#:~:text=GRID3%20NGA%20%2D%20Operational%20Wards%20v3.0,-Private%20Member) | Shapefile | 128 MB |
 | 4 | Nigeria settlement| [GRID3 NGA - Settlement Extents v4.1] (https://data.grid3.org/datasets/f705d65c012c46748e6e5f44a33728b1_0/explore?location=9.079999%2C8.679167%2C5#:~:text=GRID3%20NGA%20%2D%20Settlement%20Extents%20v4.1 | Shapefile | 2.6 MB |   
-| 5 | Water Bodies for Patani LGA | OpenStreetMap via QuickOSM (QGIS Plugin) | Vector Layer | — | 
-| 6 | Road for Patani LGA | OpenStreetMap via QuickOSM (QGIS Plugin) | Vector Layer | — | 
-| 7 | Building for Patani LGA | OpenStreetMap via QuickOSM (QGIS Plugin) | Vector Layer | — |
-| 9 | Elevation for Patani LGA |  | raster Layer | — | 
+| 5 || 5 | FABDEM (Forest and Buildings removed DEM) | [University of Bristol / FABDEM V1-2](https://data.bris.ac.uk/data/dataset/s5hqmjcdj8yo2ibzi9b4ew3sn) | Raster Layer (GeoTIFF) | ~1.1 GB (Tile N05E006) | 
+| 6 | Sentinel -1 flood imagery for Patani LGA |https://browser.dataspace.copernicus.eu/?Sentinel-1 flood imagery for Patani LGA | [Copernicus Data Space Browser](https://browser.dataspace.copernicus.eu/) | Raster Layer (GeoTIFF)  |1323 MB | 
+| 7 |Land Cover / Farmland & Forest for Patani LGA | [Esri 10m Land Cover ]([https://livingatlas.arcgis.com/landcover/](https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=6.13951%2C5.24847%2C10.64&mode=step&timeExtent=2017%2C2025&year=2025&downloadMode=true) | Raster Layer (GeoTIFF) | ~139MB AND  –85.9 MB |
+| 8 | Water Bodies for Patani LGA | OpenStreetMap via QuickOSM (QGIS Plugin) | Vector Layer | — | 
+| 9| Road for Patani LGA | OpenStreetMap via QuickOSM (QGIS Plugin) | Vector Layer | — | 
+| 10 | Building for Patani LGA | OpenStreetMap via QuickOSM (QGIS Plugin) | Vector Layer | — |
 
 
 
