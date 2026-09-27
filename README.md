@@ -60,7 +60,8 @@ the data is not this repository. Every source is linked in [the project brief](d
 -[x] Week 3, reprojected, clipped and quality checked   
 -[x] Week 4, spatial relation and analysis
 
-
+Richard Bianca Ihuoma
+08100667081 
 GeoDev Lab Africa Learn. Build. Collaborate. Transform.   
 
 
