@@ -22,15 +22,15 @@ What is the spatio-temporal extent of River Niger flood inundation in Patani LGA
 
 
 ## The data I need
-Nigeria state Bounaries 
-Nigeria Lga Boundaries
-Nigeria Ward Boundaries 
-Water Bodies 
-Roads
-Buildings
-settlement 
-Elevation and topographic data data covering patani lga 
-Remote Sensing & Imagery Data
+- Nigeria state Bounaries 
+- Nigeria Lga Boundaries
+- Nigeria Ward Boundaries 
+- Water Bodies 
+- Roads
+- Buildings
+- settlement 
+- Elevation and topographic data data covering patani lga 
+- Remote Sensing & Imagery Data
 
 
 ## Where each dataset comes from
