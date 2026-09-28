@@ -55,10 +55,10 @@ the data is not this repository. Every source is linked in [the project brief](d
 
 ## Progress
 
--[x] Week 1, project brief with a source link for every dataset   
--[x] Week 2, data downloaded, opened and described   
--[x] Week 3, reprojected, clipped and quality checked   
--[x] Week 4, spatial relation and analysis
+* **Week 1:** [Project Brief with Dataset Sources](docs/01-project-brief.md)
+* **Week 2:** [Data Notes & Descriptions](docs/02-data-notes.md)
+* **Week 3:** [Data Cleaning, Reprojection & Quality Checks](docs/02-data-note.md)
+* **Week 4:** [Month 1 Summary & Spatial Analysis](month-1-summary.md) | [Final Flood Inundation Map](week%204%20project.png)
 
 Richard Bianca Ihuoma
 08100667081 
