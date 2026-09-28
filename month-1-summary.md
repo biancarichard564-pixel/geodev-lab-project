@@ -44,3 +44,10 @@ Settlements Flooded Despite Being Further Away:I was surprised to see that even 
 ## what data i still need
 
 for now i have my raster data . i dont think i need any data for now...
+
+
+## Spatial relationships and analysis
+
+![Patani Flood Inundation and Vulnerability Map](week%204%20project.png)
+
+
