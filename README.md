@@ -55,10 +55,16 @@ the data is not this repository. Every source is linked in [the project brief](d
 
 ## Progress
 
-* **Week 1:** [Project Brief with Dataset Sources](project-brief.md)
-* **Week 2:** [Data Notes & Descriptions](data-notes.md)
-* **Week 3:** [Data Cleaning, Reprojection & Quality Checks](-data-note.md)
+## Progress & Deliverables
+
+* **Week 1:** [Project Brief with Dataset Sources](Project.brief.md)
+* **Week 2:** [Data Notes & Descriptions](data_note.md.md)
+* **Week 3:** [Data Cleaning & Quality Checks](data_note.md.md)
 * **Week 4:** [Month 1 Summary & Spatial Analysis](month-1-summary.md) | [Final Flood Inundation Map](week%204%20project.png)
+
+## Key Findings (Patani LGA Flood Risk)
+* **Flood Inundation Extent:** Peak Sentinel-1 radar imagery shows floodwaters heavily concentrated along the main River Niger corridor and lower riverfront wards (such as Patani town).
+* **Elevation & Settlement Vulnerability:** Proximity to the river alone does not determine flood risk. Bare-earth terrain data (FABDEM) reveals that several inland settlements over 500m away from the river bank were inundated due to low ground elevation (<5m) and backwater pooling in low-lying land depressions.
 
 Richard Bianca Ihuoma
 08100667081 
