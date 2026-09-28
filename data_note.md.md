@@ -10,16 +10,31 @@ What i downloaded, where it came from, what is in it and what is wrong with it.
 
 | # | Dataset | Type | Retrieved | Status |
 |---|---|---|---|---|
+| 1 | GRID3 State Boundaries | Vector (Polygon) | 16/09/2026 | Complete |
 | 1 | GRID3 LGA Boundaries | Vector (Polygon) | 16/09/2026 | Complete |
-| 2 | OSM Roads | Vector (LineString) | 16/09/2026 | Incomplete |
+| 1 | GRID3 Ward Boundaries | Vector (Polygon) | 16/09/2026 | Complete |
+| 1 | Settlement | Vector (Polygon) | 16/09/2026 | Complete |
+| 1 | FABDEM (Forest and Buildings removed DEM) | Vector (Polygon) | 16/09/2026 | Complete |
+| 1 | sentinel - 1 GRD Flood Imagery | Vector (Polygon) | 16/09/2026 | Complete |
+| 1 | Land Cover / Farmland & Forest | Vector (Polygon) | 16/09/2026 | Complete |
 | 3 | OSM Waterways | Vector (LineString) | 16/09/2026 | Partial |
- 
+| 2 | Roads | Vector (LineString) | 16/09/2026 | Incomplete |
+| 2 | Building | Vector (LineString) | 16/09/2026 | Incomplete |
+
+
+ ## GRID3 NGA - Operational State Boundaries
+- **Source:** [)
+- **Downloaded:** 8/09/2026
+- **Geometry type:** Polygon (MultiPolygon) — 774 features
+- **Columns:** `globalid`, `uniq_id`,`timestamp`,`editor`,`state name`,`capacity `,`source`, `geozone`
+- **Nulls:** No nulls in boundary fields
+- **Quality note:** Used for state boundary covers my target LGA fully.
 
 ## GRID3 NGA - Operational LGA Boundaries
 - **Source:** [https://data.grid3.org/](https://data.grid3.org/)
 - **Downloaded:** 16/09/2026
 - **Geometry type:** Polygon (MultiPolygon) — 774 features
-- **Columns:** `lga_name` (Ihitte/Uboma), `state` (Imo), `Lgacode` (17007), `Statecode` (IM)
+- **Columns:** `globalid`, `uniq_id`,`timestamp`,`editor`,`lganame`(patani),`state name`(delta),`statecode `,`source`, `amapcode`  
 - **Nulls:** No nulls in boundary fields
 - **Quality note:** Used boundary covers my target LGA fully.
 
