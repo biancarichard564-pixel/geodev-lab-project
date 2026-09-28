@@ -15,7 +15,9 @@ Spatial relationships and analysis
 
 i choose to use 
 - spatial join
+ 
 - buffer
+ 
 because they all answer to my core objective.
 
 1. spatial join
