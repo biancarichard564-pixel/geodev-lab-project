@@ -84,6 +84,14 @@ Status: week 2 complete. reprojection and quality check in week 3.
 
 
 
+
+  
+
+
+
+
+
+
 # Data notes
 **Week 3 deliverable. ** Geodev Lab Africa, Cohort One.
 Author: < Richard Bianca Ihuoma >
@@ -95,7 +103,7 @@ This document outlines the data cleaning, clipping, reprojection, and preprocess
 GRID3-https://data.grid3.org/datasets/c41532b720504f4799fe20438b7e3b7f_0/explore?location=9.077959%2C8.685290%2C5#:~:text=GRID3%20NGA%20%2D%20Operational%20State%20Boundaries -
 Extracted [2025] via Grid3, Boundary=*
 
-1 features
+37 features
 **COMPLETENESS:** Coverage is strong in the built‑up areas like patani and other major towns.
 
 **CURRENCY**: most edits 2025. 
@@ -107,36 +115,101 @@ Extracted [2025] via Grid3, Boundary=*
 **FITNESS:** Adequate for statewide accessibility analysis .
 
 
-## OSM roads, Imo State East 
+## Grid3, Lga boundary 
+(https://data.grid3.org/datasets/2bb616a49ee84f409427cc2143787113_0/explore?location=9.077959%2C8.685290%2C5#:~:text=GRID3%20NGA%20%2D%20Operational%20LGA%20Boundaries)
+Extracted [2026] via Grid3, Boundary=*
+
+774 features
+**COMPLETENESS:** Coverage is strong in the built‑up areas like patani and other major towns.
+
+**CURRENCY**: most edits 2026. 
+
+**POSITIONAL:** align well with satellite imagery.
+
+**ATTRIBUTE:** yes columns like lga_alt_na and ward-v1_gr.
+
+**FITNESS:** Adequate for statewide accessibility analysis .
+
+
+## Grid3, Ward boundary 
+(https://data.grid3.org/datasets/45cd2ef592094d12aca43113a90a6054_0/explore?location=9.077872%2C8.670771%2C5#:~:text=GRID3%20NGA%20%2D%20Operational%20Wards%20v3.0,-Private%20Member)
+Extracted [2026] via Grid3, Boundary=*
+5872 features
+
+**COMPLETENESS:** 100% complete for Patani LGA. Covers all constituent electoral/administrative wards without gaps or overlapping boundary polygons.
+
+**CURRENCY**: most edits 2026. 
+
+**POSITIONAL:** Adequate macro-scale positional accuracy. Boundaries follow recognized geographic features, rivers, and local government lines
+
+**ATTRIBUTE:** no surface tag and no Null.
+
+**FITNESS:** Ideal for sub-LGA zonal statistics and spatial aggregation. .
+
+
+## Grid3, settlement 
+(https://data.grid3.org/datasets/f705d65c012c46748e6e5f44a33728b1_0/explore?location=9.079999%2C8.679167%2C5#:~:text=GRID3%20NGA%20%2D%20Settlement%20Extents%20v4.1
+Extracted [2025] via Grid3, Boundary=*
+292,438 features
+
+**COMPLETENESS:** High coverage across Patani LGA. Most built-up areas, rural villages, and linear settlements along the River Niger and major roads are captured as polygons. However, very small isolated farmsteads or newly built structures are missed.
+
+**CURRENCY**: most edits 2025. 
+
+**POSITIONAL:** Settlement boundaries align closely with high-resolution satellite basemaps (
+
+**ATTRIBUTE:** yes columns like scdy_edtor,set_altnam and is_primary.
+
+**FITNESS:** Highly fit for spatial exposure and population vulnerability analysis. Directly enables counting or intersecting flooded settlement footprint areas against Sentinel-1 inundation layers.
+
+
+## OSM roads, Patani Delta 
+Extracted [date] via QuickOSM, water body=*
+
+25 features
+
+**COMPLETENESS:** High completeness for primary river channels (such as the main course of the River Niger and major distributaries like the Forcados River). Lower completeness for minor inland streams, seasonal flood channels, or dense swamp forest creeks, which was not be mapped in OpenStreetMap
+
+**CURRENCY:** Moderate to High currency (2026)
+
+**POSITIONAL:** Good positional accuracy for major permanent watercourses, aligning well with high-resolution satellite basemaps. However, seasonal riverbank shifts and dynamic floodplains mean boundaries may differ slightly from real-time flood extents.
+
+**ATTRIBUTE:** Yes column like tunnel and layer has 23 null    
+
+**FITNESS:** Highly fit as a baseline reference for permanent/dry-season open water.
+
+
+## OSM roads, Patani Delta state
 Extracted [date] via QuickOSM, highway=*
 
-13 features
+8 features
 
-**COMPLETENESS:** good in built-up area. Compared my own office area: all the roads present. 
+**COMPLETENESS:** Good coverage in built-up areas and primary transportation corridors (such as the East-West Road and main arterial town roads). Minor rural farm tracks, unpaved village paths, or newly built residential access roads may be incomplete or unmapped.
 
-**CURRENCY:** Most edits cluster around 2019–2023. Newly developed estates or peri‑urban expansions may not yet be mapped.
+**CURRENCY:** Moderate currency (most edits cluster between 2019 and 2026)
 
-**POSITIONAL:** roads align well with satellite imagery, no systematic offset visible.
+**POSITIONAL:** Good positional accuracy.
 
 **ATTRIBUTE:** non has a surface tag but has Null. 
 
 **FITNESS:** adequate for access analysis in the built-up area. Not adequate for a paved-road question.
 
 
-## Hospital, Imo State East 
-Extracted [date] via QuickOSM, amenity=*
+## OSM roads, Patani Delta 
+Extracted [date] via QuickOSM, Building=*
 
-21 features
+420 features
 
-**COMPLETENESS:** Major hospitals in urban centers (e.g., Federal Medical Centre Owerri, Imo State University Teaching Hospital) are mapped. Smaller rural health centers are missing
+**COMPLETENESS:** Moderate to High completeness across Patani LGA. Built-up hubs, formal administrative structures, and dense residential clusters along the River Niger and major transit corridors are mapped as distinct polygons. However, small informal structures, temporary rural farmsteads, and newly erected buildings post-dating the last satellite imagery scan are omitted.
 
-**CURRENCY:** Updates vary; new private hospitals or clinics may not yet appear in OSM.
+**CURRENCY:** Up to date (derived from 2024–2026 satellite imagery extractions).
 
-**POSITIONAL:** Large hospitals align well with satellite imagery; rural clinics sometimes mis‑located and i saw non.
+**POSITIONAL:** Good positional accuracy. Polygon boundaries align closely
 
-**ATTRIBUTE:** Many hospital features lack detailed tags 
-
-**FITNESS:** Adequate for identifying major healthcare facilities. Not adequate for detailed health service capacity analysis.
+**ATTRIBUTE:** Yes columns like layer has 7 null out of 8 and bridge has 7 null and one yes
+- 8 features have no surface tag, 1 has an unpaved surface tag.
+- 
+**FITNESS:** Highly fit for network connectivity, emergency route accessibility, and spatial exposure analysis
 
 
 
@@ -144,7 +217,7 @@ Extracted [date] via QuickOSM, amenity=*
 ## CRS and preparation
 -All source layers arrived in EPSG:4326
 
--Study area:Imo state East, extracted from GRID3 state boundary
+-Study area: Patani delta state (south-south), extracted from GRID3 state boundary
 
 -All Layer clipped to study area, then reprojected to EPSG:32632(UTM 32N) Note : i choose it because 
 
@@ -154,7 +227,7 @@ b.When you calculate area in QGIS, using EPSG:4326 (degrees) will give distorted
 
 c. Delta State sit comfortably in Zone 32N, so EPSG:32632 minimizes distortion for your study area.
 
--Area check: Imo State East 5,101 km²,matches published figure 
+-Area check: Delta State Total Area: Approximately $17,698km.Patani LGA Total Area: Approximately 217km to 220km.
 
 -Working files in data/process, raw files untouched 
 ```
