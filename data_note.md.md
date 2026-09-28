@@ -10,56 +10,77 @@ What i downloaded, where it came from, what is in it and what is wrong with it.
 
 | # | Dataset | Type | Retrieved | Status |
 |---|---|---|---|---|
-| 1 | GRID3 State Boundaries | Vector (Polygon) | 16/09/2026 | Complete |
-| 1 | GRID3 LGA Boundaries | Vector (Polygon) | 16/09/2026 | Complete |
-| 1 | GRID3 Ward Boundaries | Vector (Polygon) | 16/09/2026 | Complete |
-| 1 | Settlement | Vector (Polygon) | 16/09/2026 | Complete |
-| 1 | FABDEM (Forest and Buildings removed DEM) | Vector (Polygon) | 16/09/2026 | Complete |
-| 1 | sentinel - 1 GRD Flood Imagery | Vector (Polygon) | 16/09/2026 | Complete |
-| 1 | Land Cover / Farmland & Forest | Vector (Polygon) | 16/09/2026 | Complete |
-| 3 | OSM Waterways | Vector (LineString) | 16/09/2026 | Partial |
-| 2 | Roads | Vector (LineString) | 16/09/2026 | Incomplete |
-| 2 | Building | Vector (LineString) | 16/09/2026 | Incomplete |
+| 1 | GRID3 State Boundaries | Vector (Polygon) | 8/09/2026 | Complete |
+| 2 | GRID3 LGA Boundaries | Vector (Polygon) | 8/09/2026 | Complete |
+| 3 | GRID3 Ward Boundaries | Vector (Polygon) | 8/09/2026 | Complete |
+| 4 | Settlement | Vector (point) | 26/02/2026 | Complete |
+| 5 | OSM Waterways | Vector (LineString) | 16/09/2026 | Partial |
+| 6 | Roads | Vector (LineString) | 16/09/2026 | Incomplete |
+| 7| Building | Vector (LineString) | 16/09/2026 | Incomplete |
 
 
  ## GRID3 NGA - Operational State Boundaries
-- **Source:** [)
+- **Source:** [GRID3 NGA Operational State Boundaries])
 - **Downloaded:** 8/09/2026
-- **Geometry type:** Polygon (MultiPolygon) — 774 features
+- **Geometry type:** Polygon (MultiPolygon) — 37 features
 - **Columns:** `globalid`, `uniq_id`,`timestamp`,`editor`,`state name`,`capacity `,`source`, `geozone`
 - **Nulls:** No nulls in boundary fields
 - **Quality note:** Used for state boundary covers my target LGA fully.
 
 ## GRID3 NGA - Operational LGA Boundaries
 - **Source:** [https://data.grid3.org/](https://data.grid3.org/)
-- **Downloaded:** 16/09/2026
+- **Downloaded:** 8/09/2026
 - **Geometry type:** Polygon (MultiPolygon) — 774 features
 - **Columns:** `globalid`, `uniq_id`,`timestamp`,`editor`,`lganame`(patani),`state name`(delta),`statecode `,`source`, `amapcode`  
 - **Nulls:** No nulls in boundary fields
 - **Quality note:** Used boundary covers my target LGA fully.
 
+## GRID3 NGA - Operational Ward Boundaries
+- **Source:** [[GRID3 NGA Operational Wards v3.0])
+- **Downloaded:** 16/09/2026
+- **Geometry type:** Polygon (MultiPolygon) — 5872 features
+- **Columns:** `Country`, `iso3`,`state`,`statecode`,`lga`(patani),`lga_alt_na`,`ward `,`ward_alt_n`, `ward-v1_gr`, `ward_in_gr`,`multipart`,`source`, `date`
+- **Nulls:** yes columns like lga_alt_na and ward-v1_gr
+- **Quality note:** Ward boundary covers my target LGA fully.
+
+## GRID3 NGA - Settlement
+- **Source:** [[GRID3 NGA - Settlement Extents v4.1])
+- **Downloaded:** 26/02/2026
+- **Geometry type:**is_primary — 292,438 features
+- **Columns:** `globalid`, `uniq_id`,`timestamp`,`editor`,`scdy_edtor,`wardname`,`wardcode `,`lganame`, `lgacode`, `statename`,`statecode`,`set_altnam`, `set_id`,`set_name`,`is_primary`,`source`
+- **Nulls:** yes columns like scdy_edtor,set_altnam and is_primary
+- **Quality note:** Settlement covers my target LGA fully.
+
+## OSM Waterways (extracted via QuickOSM)
+- **Query:** `waterway=*` in and within Patani
+- **Extracted:** 27/09/2026
+- **Geometry type:** Line (LineString) — 25 features
+- **Columns:** `fid`, `full_id`,`osm_id`,`osm_type`,`Waterway(stream),`tunnel`,`layer `
+- **Nulls:** Yes column like tunnel and layer has 23 null    
+- **Quality note:** The extracted OSM river data shows clear representation of major rivers, while rural streams and smaller tributaries are not mapped, indicating sparse coverage in the outskirts.. 
+
 ## OSM Roads (extracted via QuickOSM)
-- **Query:** `highway=*` in Ihitte/Uboma
+- **Query:** `highway=*` in Patani
 - **Extracted:** 16/09/2026
-- **Geometry type:** Line (LineString) — 26 features
-- **Nulls:** Yes — 25 features have no surface tag, 1 has an unpaved surface tag.
+- **Geometry type:** Line (LineString) — 8 features
+- **Columns:** `fid`, `full_id`,`osm_id`,`osm_type`,`highway(tertiary),`layer`,`bridge `,`surface`,
+- **Nulls:** Yes columns like layer has 7 null out of 8 and bridge has 7 null and one yes
+- 8 features have no surface tag, 1 has an unpaved surface tag.
 - **Quality note:** Shows dense coverage in the urban core, while the outskirts have limited representation with only major roads mapped.
 
- 
-## OSM Waterways (extracted via QuickOSM)
-- **Query:** `waterway=*` within Ihitte/Uboma
-- **Extracted:** 16/09/2026
-- **Geometry type:** Line (LineString) — 13 features
-- **Nulls:** Yes
-- **Quality note:** The extracted OSM river data shows clear representation of major rivers, while rural streams and smaller tributaries are not mapped, indicating sparse coverage in the outskirts.. 
+ ## OSM Building (extracted via QuickOSM)
+- **Query:** `Building =*` in Patani
+- **Extracted:** 27/09/2026
+- **Columns:** `fid`, `full_id`,`osm_id`,`osm_type`,`building,
+- **Geometry type:** Polygon (MultiPolygon) — 420 features
+- **Nulls:** nil
+- **Quality note:** The extracted OSM building data shows a bit of settlement in patani .
 
 ## Problem 
 The extracted OSM river data shows clear representation of major rivers, while rural streams and smaller tributaries are not mapped, indicating sparse coverage in the outskirts..
 
 
 Status: week 2 complete. reprojection and quality check in week 3. 
-
-
 
 
 
@@ -75,7 +96,7 @@ GRID3-https://data.grid3.org/datasets/c41532b720504f4799fe20438b7e3b7f_0/explore
 Extracted [2025] via Grid3, Boundary=*
 
 1 features
-**COMPLETENESS:** Coverage is strong in the built‑up areas like Owerri and other major towns.
+**COMPLETENESS:** Coverage is strong in the built‑up areas like patani and other major towns.
 
 **CURRENCY**: most edits 2025. 
 
@@ -131,7 +152,7 @@ a.  EPSG:32632 is a Universal Transverse Mercator projection.
 
 b.When you calculate area in QGIS, using EPSG:4326 (degrees) will give distorted results. Reprojecting to EPSG:32632 ensures your area is measured in square meters, which you can then convert to km². 
 
-c. Imo State and Delta State sit comfortably in Zone 32N, so EPSG:32632 minimizes distortion for your study area.
+c. Delta State sit comfortably in Zone 32N, so EPSG:32632 minimizes distortion for your study area.
 
 -Area check: Imo State East 5,101 km²,matches published figure 
 
