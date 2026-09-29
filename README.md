@@ -66,6 +66,12 @@ the data is not this repository. Every source is linked in [the project brief](d
 * **Flood Inundation Extent:** Peak Sentinel-1 radar imagery shows floodwaters heavily concentrated along the main River Niger corridor and lower riverfront wards (such as Patani town).
 * **Elevation & Settlement Vulnerability:** Proximity to the river alone does not determine flood risk. Bare-earth terrain data (FABDEM) reveals that several inland settlements over 500m away from the river bank were inundated due to low ground elevation (<5m) and backwater pooling in low-lying land depressions.
 
+
+## Month 2:development environment and early python 
+week 5: set up python, VS code and the terminal. hello.py runs
+
+
+
 Richard Bianca Ihuoma
 
 08100667081 
