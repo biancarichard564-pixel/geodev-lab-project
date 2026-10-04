@@ -72,6 +72,8 @@ week 5: setup python, VS code and the terminal. hello.py runs
 
 
 
+
+
 Richard Bianca Ihuoma
 
 08100667081 
