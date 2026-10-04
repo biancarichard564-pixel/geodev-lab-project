@@ -67,7 +67,7 @@ the data is not this repository. Every source is linked in [the project brief](d
 * **Elevation & Settlement Vulnerability:** Proximity to the river alone does not determine flood risk. Bare-earth terrain data (FABDEM) reveals that several inland settlements over 500m away from the river bank were inundated due to low ground elevation (<5m) and backwater pooling in low-lying land depressions.
 
 
-## Month 2:preparation development environment and early python 
+## Month 2:development environment and early python 
 week 5: setup python, VS code and the terminal. hello.py runs
 
 
