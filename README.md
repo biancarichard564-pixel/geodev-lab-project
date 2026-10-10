@@ -69,6 +69,7 @@ the data is not this repository. Every source is linked in [the project brief](d
 
 ## Month 2:development environment and early python 
 week 5: setup python, VS code and the terminal. hello.py runs
+
 week 6: setup with uv, added python,check.py prints the pandas version
 
 
