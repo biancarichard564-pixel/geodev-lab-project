@@ -74,7 +74,7 @@ the data is not this repository. Every source is linked in [the project brief](d
 
 "week 7: analyse.py reads wards.csv, converts each area and classifies each ward".
 
-"week 8: inspect_data.py summaries uniq_id and lgacode in Patani Settlement UTM32.csv data 
+"week 8: inspect_data.py summaries uniq_id and lgacode in Patani Settlement UTM32.csv data". 
 
 
 
