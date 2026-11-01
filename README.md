@@ -79,7 +79,7 @@ the data is not this repository. Every source is linked in [the project brief](d
 "week 9: Refactored the data processing script into shapes of working function (read_rows, clean_values, and summarise) to handle the Patani Settlement dataset .
 
 ### Month 2 reflection
-Breaking code down into smaller, reusable functions clicked for me this month which makes debugging feel way less overwhelming. though,I'm still wrapping my head around handling every edge case when cleaning messy data sets . 
+Breaking code down into smaller, reusable functions clicked for me this month which makes debugging feel way less overwhelming. Though,I'm still wrapping my head around handling every edge case when cleaning messy data sets . 
 Looking at my capstone project, it's cool to see how structuring the Month 1 data properly reveals clear patterns in the settlement sizes.
 
 
