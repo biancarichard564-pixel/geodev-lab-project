@@ -1,19 +1,13 @@
 [project]
-name = "biancarichard564-pixel"
+name = "geodev-lab-project"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "KingHenrycruz", email = "KingHenrycruz@gmail.com" }
-]
 requires-python = ">=3.12"
 dependencies = [
     "pandas>=3.0.6",
 ]
 
-[project.scripts]
-biancarichard564-pixel = "biancarichard564_pixel:main"
-
 [build-system]
-requires = ["uv_build>=0.12.20,<0.13.0"]
-build-backend = "uv_build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

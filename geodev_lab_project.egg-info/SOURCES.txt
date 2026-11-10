@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+geodev_lab_project.egg-info/PKG-INFO
+geodev_lab_project.egg-info/SOURCES.txt
+geodev_lab_project.egg-info/dependency_links.txt
+geodev_lab_project.egg-info/requires.txt
+geodev_lab_project.egg-info/top_level.txt

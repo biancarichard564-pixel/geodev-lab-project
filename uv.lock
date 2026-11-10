@@ -11,7 +11,7 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "biancarichard564-pixel"
+name = "geodev-lab-project"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
