@@ -82,6 +82,9 @@ the data is not this repository. Every source is linked in [the project brief](d
 Breaking code down into smaller, reusable functions clicked for me this month which makes debugging feel way less overwhelming. Though,I'm still wrapping my head around handling every edge case when cleaning messy data sets . 
 Looking at my capstone project, it's cool to see how structuring the Month 1 data properly reveals clear patterns in the settlement sizes.
 
+## Month 3: geospatial Python and automation
+
+- Week 10: GeoPandas. Loaded, checked, joined and mapped my wards in code.
 
 
 
