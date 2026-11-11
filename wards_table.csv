@@ -1,0 +1,11 @@
+country,iso3,state,statecode,lga,lga_alt_na,ward,ward_alt_n,ward_v1_gr,ward_in_gr,multipart_,source,date,area_sqkm
+Nigeria,NGA,Delta,DE,Patani,,Abari,,,1.0,1.0,CIESIN,2026-06-30,28.0
+Nigeria,NGA,Delta,DE,Patani,,Agoloma,Agaloma,,1.0,1.0,CIESIN,2026-06-30,17.0
+Nigeria,NGA,Delta,DE,Patani,,Buluangiama,"Bulu Angiama, Bolou - Angiama",,1.0,1.0,CIESIN,2026-06-30,57.0
+Nigeria,NGA,Delta,DE,Patani,,Odorubu,"Odorubu/Adobu/Bolou Apelebri, Odorubu Ward 10",,1.0,1.0,CIESIN,2026-06-30,65.0
+Nigeria,NGA,Delta,DE,Patani,,Patani 2,"Patani2, Patani  2",,1.0,1.0,CIESIN,2026-06-30,11.0
+Nigeria,NGA,Delta,DE,Patani,,Patani 3,"Ward 3, Patani3, Patani  3",,1.0,2.0,CIESIN,2026-06-30,10.0
+Nigeria,NGA,Delta,DE,Patani,,Patani 4,"Ward 4, Patani4",,1.0,1.0,CIESIN,2026-06-30,7.0
+Nigeria,NGA,Delta,DE,Patani,,Patani 5,"Ward 5, Patani5",,1.0,1.0,CIESIN,2026-06-30,26.0
+Nigeria,NGA,Delta,DE,Patani,,Toruangiama,"Turu Angiama, Toru-Angiama",,1.0,1.0,CIESIN,2026-06-30,19.0
+Nigeria,NGA,Delta,DE,Patani,,Uduophori,,,1.0,1.0,CIESIN,2026-06-30,43.0

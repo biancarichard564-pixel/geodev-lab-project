@@ -1,0 +1,14 @@
+# Week 10: GeoPandas exploration, join and maps
+
+## Overview
+In this week, I used GeoPandas to load, inspect, spatially join, and map my custom Patani project data.
+
+## Scripts Created
+* `my_explore.py`: Loaded `Patani ward.gpkg` and printed layer geometry, shape, bounds, and CRS.
+* `my_points.py`: Loaded the settlement GeoPackage and verified point alignment with wards.
+* `my_join.py`: Performed spatial join between settlements and wards.
+* `my_make_map.py`: Generated and saved `patani_settlement_map.png`.
+* `my_save_output.py`: Exported layers to `week10_outputs.gpkg` and tables to CSV.
+
+## Reflection
+Working with GeoPandas made it straightforward to inspect spatial properties and generate maps directly from Python scripts.
